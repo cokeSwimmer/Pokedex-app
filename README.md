@@ -5,7 +5,7 @@
 
 - This app helped me understand about JSON and parsing.
 
-<img src="https://user-images.githubusercontent.com/102324791/192410952-2d67126b-1b97-40dd-a79d-d8104c1dcfc8.jpg" width="120">
+<img src="https://user-images.githubusercontent.com/102324791/192410952-2d67126b-1b97-40dd-a79d-d8104c1dcfc8.jpg" width="180">
 
 Pokedex JSON - https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
 
