@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0a123d">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#2b3151"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="12dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgSec"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/propertyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgSec"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="#303a62"
+                android:elevation="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="1dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="40dp"
+                        android:background="#606EBC"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nameSec" />
+
+                    <TextView
+                        android:id="@+id/nameSec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="serif"
+                        android:text="Bulbasaur"
+                        android:textAllCaps="false"
+                        android:textColor="#03A9F4"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Weight"
+                        android:textAllCaps="true"
+                        android:textColor="#2CB6C8"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/view"
+                        app:layout_constraintTop_toBottomOf="@+id/nameSec"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/weightData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/view"
+                        app:layout_constraintTop_toBottomOf="@+id/weight"
+                        android:layout_marginTop="12dp"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Height"
+                        android:textAllCaps="true"
+                        android:textColor="#2CB6C8"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/view"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nameSec"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/heightData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@+id/view"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/height"
+                        android:layout_marginTop="12dp"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Type"
+                        android:textAllCaps="true"
+                        android:textColor="#2CB6C8"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/type"
+                        android:layout_marginTop="4dp"
+                        android:background="#606EBC"/>
+
+                    <TextView
+                        android:id="@+id/typeData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/type"
+                        android:layout_marginTop="8dp"
+                        android:paddingHorizontal="8dp"
+                        android:textAlignment="center"
+                        android:text="Grass Poison"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/weaknesses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Weakness"
+                        android:textAllCaps="true"
+                        android:textColor="#2CB6C8"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/typeData"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/weaknesses"
+                        android:layout_marginTop="4dp"
+                        android:background="#606EBC"/>
+
+                    <TextView
+                        android:id="@+id/weaknessesData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/weaknesses"
+                        android:paddingHorizontal="8dp"
+                        android:layout_marginTop="8dp"
+                        android:textAlignment="center"
+                        android:text="Fire Flying Psychic Flying"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText"/>
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/weaknessesData"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/pokedex_icon" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
