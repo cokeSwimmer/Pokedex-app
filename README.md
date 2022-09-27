@@ -7,6 +7,8 @@
 
 ![pokedex_page1](https://user-images.githubusercontent.com/102324791/192410952-2d67126b-1b97-40dd-a79d-d8104c1dcfc8.jpg)
 
+<img src="https://user-images.githubusercontent.com/102324791/192410952-2d67126b-1b97-40dd-a79d-d8104c1dcfc8.jpg" width="48">
+
 Pokedex JSON - https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
 
 Design inspired from - https://dribbble.com/shots/14500564-Pokedex/attachments/6185896?mode=media
